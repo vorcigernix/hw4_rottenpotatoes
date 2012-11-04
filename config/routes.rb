@@ -53,6 +53,7 @@ Rottenpotatoes::Application.routes.draw do
 
   # See how all your routes lay out with "rake routes"
 
+  match 'movies/same_director/:id' => 'movies#same_director', :as => :same_director
   # This is a legacy wild controller route that's not recommended for RESTful applications.
   # Note: This route will make all actions in every controller accessible via GET requests.
   # match ':controller(/:action(/:id(.:format)))'
